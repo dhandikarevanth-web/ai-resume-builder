@@ -60,3 +60,14 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
 }
+.template-dark {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}.template-green {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
