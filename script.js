@@ -44,3 +44,23 @@ function calculateATS() {
 
   document.getElementById("atsScore").innerText = score + "% ATS Friendly";
 }
+const template = document.getElementById("templateSelect");
+
+template.addEventListener("change", function () {
+
+  const preview = document.getElementById("resumePreview");
+
+  preview.className = "";
+
+  if (this.value === "blue") {
+    preview.classList.add("template-blue");
+  }
+
+  else if (this.value === "dark") {
+    preview.classList.add("template-dark");
+  }
+
+  else if (this.value === "green") {
+    preview.classList.add("template-green");
+  }
+});
