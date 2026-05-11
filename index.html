@@ -1,15 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Resume Builder</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>AI Resume Builder</h1>
-<p>Create professional resumes easily.</p>
+<header>
+  <h1>AI Resume Builder</h1>
+  <p>Create Professional ATS-Friendly Resumes</p>
+</header>
 
-<button>Get Started</button>
+<div class="container">
+
+  <div class="form-section">
+    <h2>Resume Form</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <textarea id="summary" placeholder="Career Summary"></textarea>
+
+    <button onclick="generateSummary()">AI Summary Suggestion</button>
+
+    <textarea id="skills" placeholder="Skills"></textarea>
+
+    <button onclick="suggestSkills()">AI Skill Suggestions</button>
+
+    <textarea id="education" placeholder="Education"></textarea>
+
+    <textarea id="projects" placeholder="Projects"></textarea>
+
+    <button onclick="improveProjects()">Improve Project Description</button>
+
+    <textarea id="experience" placeholder="Experience"></textarea>
+
+    <button onclick="calculateATS()">Check ATS Score</button>
+
+    <button onclick="generateResume()">Generate Resume</button>
+  </div>
+
+  <div class="preview-section">
+    <h2>Live Resume Preview</h2>
+
+    <div id="resumePreview">
+      <h1 id="previewName"></h1>
+      <p id="previewEmail"></p>
+      <p id="previewPhone"></p>
+
+      <h3>Career Summary</h3>
+      <p id="previewSummary"></p>
+
+      <h3>Skills</h3>
+      <p id="previewSkills"></p>
+
+      <h3>Education</h3>
+      <p id="previewEducation"></p>
+
+      <h3>Projects</h3>
+      <p id="previewProjects"></p>
+
+      <h3>Experience</h3>
+      <p id="previewExperience"></p>
+
+      <h3>ATS Score</h3>
+      <p id="atsScore"></p>
+    </div>
+  </div>
+
+</div>
 
 <script src="script.js"></script>
 </body>
